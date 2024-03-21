@@ -1,0 +1,104 @@
+.navbar{
+  background: rgb(30, 30, 30);
+  margin: 0 auto;
+  max-width: 110rem;
+  padding: 1rem 0.11rem;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+.logo{
+  object-fit: cover;
+  height: 3rem;
+  width: 4rem;
+  margin-left: 15px;
+}
+.desktopMenuListItem{
+  margin: 1rem;
+  cursor: pointer;
+}
+.desktopMenuListItem:hover{
+  color: yellow;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid yellow;
+}
+.desktopMenubtn{
+  background: white;
+  color: black;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 1rem;
+  border-radius: 2rem;
+}
+.desktopMenuImg{
+  object-fit: cover;
+  height: 1rem;
+  width: 1rem;
+  margin: 1rem;
+}
+.desktopMenubtn:hover{   
+  color: rgb(26, 1, 1);
+  cursor: pointer;
+ 
+}
+.active{
+  color: yellow;
+  border-bottom: 3px solid yellow;
+  padding: 0.5rem;
+}
+.mobMenu{
+  display: none;
+  object-fit: cover;
+  height: 1.8rem;
+}
+.navMenu{
+  position:absolute;
+  top : 4rem;
+  right: em;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  height: fit-content;
+  min-width: 15rem;
+  background: rgb(40, 40, 40);
+  border-radius: 1rem;
+}
+.listItem{
+  color: white;
+  padding: 0.5rem 3rem;
+  margin: 0.25rem;
+  background: rgb(30, 30, 30);
+}
+
+@media screen and (max-width: 768px) {
+  .desktopMenu {
+    display: none; /* Hide desktop menu */
+  }
+
+  .mobMenu {
+    display: block; /* Show mobile menu icon */
+  }
+  
+  .listItem {
+    padding: 1rem; /* Add padding to each menu item */
+    border-bottom: 1px solid #ccc; /* Add a border between items */
+  }
+  .desktopMenubtn {
+    display: none; /* Hide desktop contact button */
+  }
+}
+
+/* Additional media query for smaller screens */
+@media screen and (max-width: 576px) {
+  .listItem {
+    font-size: 0.9rem; /* Decrease font size for smaller screens */
+  }
+}
+
+
