@@ -1,0 +1,137 @@
+#Works{
+  width: 110vh; /* Adjusted for responsiveness */
+  min-height: calc(100vh-4rem);
+  max-width: 2050rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  
+}
+.worksTitle{
+  font-size: 3rem;
+  font-weight: 600;
+  padding-top: 3rem;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+.worksDesc{
+  font-size: 0.9rem;
+  font-weight: 400;
+  max-width: 60rem;
+  padding: 0 2rem;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+.worksImgs{
+   justify-content: center;
+   display: flex;
+   align-items: center;
+   width: 190%; 
+   flex-wrap: wrap;
+}
+.worksImg{
+   max-width: 200rem; 
+   object-fit: cover; 
+   height: 14rem;
+   width: 12rem;
+   margin: 0.2rem;
+   display: flex;
+   flex-wrap: wrap;
+}
+.workBtn{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 0.5rem 2.5rem;
+  border: none;
+  border-radius: 2.5rem;
+  background: white;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  #Works {
+    width: 90vw; 
+    max-width: none; 
+  }
+
+  .worksTitle {
+    font-size: 2.5rem; 
+    padding-top: 2rem; 
+  }
+
+  .worksDesc {
+    font-size: 0.8rem; 
+    max-width: 90vw; 
+    padding: 0 1rem; 
+  }
+
+  .worksImgs {
+   display: flex;
+   flex-direction: column;
+  }
+
+  .worksImg {
+    max-width: 45%; 
+    height: auto; 
+    margin: 0.5rem auto;
+  }
+
+  .workBtn {
+    margin-top: 1rem; 
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .worksTitle {
+    font-size: 2rem;
+  }
+
+  .worksDesc {
+    font-size: 0.7rem; 
+  }
+
+  .worksImg {
+    max-width: 100%;
+  }
+}
+
+/* 
+@media screen and (max-width: 768px) {
+  #Works{
+    width: 50vh;
+
+  }
+  .worksTitle {
+    font-size: 2.5rem;
+  }
+
+  .worksDesc {
+    font-size: 0.8rem;
+  }
+
+  .worksImg{
+    height: 0.25vh;
+    width: 0.25vh;
+    margin-left:-auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+
+  .worksTitle {
+    font-size: 2rem;
+  }
+  .worksDesc {
+    font-size: 0.7rem;
+  }
+
+  .worksImg {
+    height: 30rem;
+    width: 50%;
+  }
+  
+} */
