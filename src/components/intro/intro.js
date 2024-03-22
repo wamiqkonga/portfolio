@@ -3,6 +3,7 @@ import './intro.css';
 import bg from '../../assets/image.png';
 import { Link } from 'react-scroll'
 import btnImg from '../../assets/hireme.png';
+import btnImgMob from '../../assets/hire arrow.svg'
 
 
 const Intro = () => {
@@ -21,8 +22,14 @@ const Intro = () => {
         <p className='introPara'>I'm a skilled web developer with experience in creating robust web applications.</p>
         <>
         <Link> <button  className="btn" onClick={redirectToLinkedIn}>
-          <img src={btnImg}  alt="Hire Me" /> 
+          <img className='btnImg' src={btnImg}  alt="Hire Me" /> 
           Hire Me</button>
+         </Link>
+
+         <Link> <button  className="btnMob" onClick={redirectToLinkedIn}>
+         <span class="button-text">Hire Me</span>
+          <span className='btnImgMob'><img src={btnImgMob} /> </span>
+          </button>
          </Link>
          
          </>
