@@ -1,7 +1,7 @@
 .navbar{
   background: rgb(30, 30, 30);
   margin: 0 auto;
-  max-width: 110rem;
+  max-width: 100rem;
   padding: 1rem 0.11rem;
   display: flex;
   align-items: center;
@@ -77,6 +77,10 @@
 }
 
 @media screen and (max-width: 768px) {
+  .navbar{
+    width: 32rem;
+    max-width: 45rem;
+  }
   .desktopMenu {
     display: none; /* Hide desktop menu */
   }
