@@ -1,7 +1,7 @@
 #intro{
   height: calc(100vh - 4rem);
   width: 110vw;
-  max-width: 40rem;
+  max-width: 60rem;
   margin: 0 auto;
   overflow: x;
   position: relative;
